@@ -25,7 +25,16 @@ public class Tugas129 {
                 terendah = nilaiMhs[i];
             }
         }
-       
+        double rata2 = (double) total/jumlahMhs;
+        
+        for (int i = 0; i < jumlahMhs; i++) {
+            String status = (nilaiMhs[i] >= 60) ? "LULUS" : "TIDAK LULUS";
+            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiMhs[i] + " (" + status + ")");
+        }
+        System.out.println("Nilai rata - rata: " + rata2);
+        System.out.println("Nilai Tertinggi: " + tertinggi);
+        System.out.println("Nilai Terendah: " + terendah);
+
         sc.close();
     }
 }
