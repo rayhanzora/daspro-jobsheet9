@@ -53,7 +53,11 @@ public class Tugas229 {
                 }
             } while (!valid);
         }
-       
+        System.out.println("\n======== STRUK PEMESANAN =========");
+        for (int i = 0; i < pesanan.length; i++) {
+            System.out.println((i + 1) + ". " + pesanan[i] + " = Rp." + hargaPesanan[i]);
+        }
+        System.out.println("\nTotal biaya: Rp." + totalBiaya);
         sc.close();
     }
 }
